@@ -13,7 +13,7 @@ import pandas as pd
 movies = pickle.load(open('movies.pkl', 'rb'))
 similarity = pickle.load(open('con_sim_matrix.pkl', 'rb'))
 
-API_KEY = "568ea69b1774310bf7c9b36c9e37aa9b5"
+API_KEY = " "  #use your API Key from the TMDB
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}"
     response = requests.get(url).json()
